@@ -142,10 +142,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
       
 			    <div class="out">
 			      	<div class="trainee_left" style="">
-			            <ul style="margin: 20px 0px 0px 40px; width:290px; height: 200px;border:1px solid rgb(213,213,213);">
+			            <ul style="margin: 20px 0px 0px 40px; width:390px; height: 200px;border:1px solid rgb(213,213,213);">
 			                <li style="margin-top: 20px;margin-left: 20px;">
 			                   <img style="float: left;" alt="" src="./${trainee.photo }" title="姓名"/>
-			                   	<div style="float: left; padding-left: 30px; line-height: 30px; font-size: 12px;border-left:1px solid rgb(213,213,213);">
+			                   	<div style="float: left; padding-left: 25px; line-height: 30px; font-size: 12px;border-left:1px solid rgb(213,213,213); margin-left: 20px; padding-bottom: 10px">
 			                      <p>姓名：${trainee.name }</p>
 			                      <p>专业：${trainee.major }</p>
 			                      <p>实习地点：${trainee.city }</p>

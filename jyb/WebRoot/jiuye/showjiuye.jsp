@@ -151,7 +151,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	            </div>
 			 	<form id="turnPagefm" action="<%=UrlKit.getDomain(request) %>/jiuye/queryUserPage" >
 			 		<div style="float:right; margin-top: 20px; width:240px; margin-right: 40px;">
-						<input name="title" placeholder="请输入关键字" style="float:left; height: 30px; border-radius:5px;">
+						<input name="title" placeholder="请输入关键字" style="float:left; height: 30px; border-radius:3px; border: 1px solid rgb(213, 213, 213); padding-left: 5px ">
 						<input type="submit"  style="float:right; line-height: 30px; padding: 0 10px; background: #3399cc; color:#ffffff; border-radius:5px;">
 					</div> 		
 					<table style="border-collapse:collapse; font-size: 12px; margin: 20px 0 0 40px; float: left;">										

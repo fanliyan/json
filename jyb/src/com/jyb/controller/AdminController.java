@@ -52,9 +52,9 @@ public class AdminController {
 		  
 		  try {
 			List<Map> list = adminService.showAllTrainee(paraMap);
-			long total = adminService.getTraineeTotal(paraMap);			
+			long total = adminService.getTraineeTotal(paraMap);
 			reMap.put("rows", list);     //存放每页记录数
-			reMap.put("total", total);   //存放每页记录数
+			reMap.put("total", total);   //存放总记录数 ，必须的
 		} catch (Exception e) {	
 			e.printStackTrace();
 		}
@@ -126,7 +126,7 @@ public class AdminController {
 		String aid = (String)request.getSession().getAttribute("aid");
 		if(!trainee.getFile().isEmpty()){
 			String imgSrc = FileUpload.fileUpload(request, trainee.getFile());
-			trainee.setPhoto(imgSrc);
+			trainee.setPhoto(imgSrc);			 
 		}
 		try {			
 			Map paraMap = adminService.editOneTrainee(trainee, aid);
