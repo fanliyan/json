@@ -22,7 +22,7 @@ public class ArticleCtrl {
 
 	@Resource(name = "ArticleSrv")
 	private ArticleSrv articleSrv;
-
+	
 	@SuppressWarnings("rawtypes")
 	@RequestMapping(value = "/selectAllTitle")
 	public ModelAndView selectAllTitle(

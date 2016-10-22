@@ -20,6 +20,7 @@ public class IndexService {
 	
 	/**
 	 * Õ¾ÄÚËÑË÷
+	 * @author ·¶Á¢Ñ×
 	 * @param map
 	 * @return Map
 	 * @throws Exception
