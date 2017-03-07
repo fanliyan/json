@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ajaxShowFiles.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=GBK">
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+  </head>
+  <script type="text/javascript">
+        function init(){
+             $.ajax({
+                 url: 'ajaxShowFileServlet',
+                 type: 'post',
+                 dataType: 'json',
+                 success: function(data){
+                       var str = "";
+                       for(var i = 0; i < data.list.length; i++){
+                          var o = data.list[i];
+                          str += "<a href='showFileDetail?id = "+ o[o]+ "'></a>";
+                          str += o[1];
+                          str += o[2];
+                          str += o[3];
+                       }
+                       $("#content").html(str);
+                 },
+                 
+                 error: function(XMLHttpRequest, textStatus, errorThrown){
+		                    alert(XMLHttpRequest);
+		        	   		alert(textStatus);
+		        	   		alert(errorThrown);
+                 }
+             });
+        }
+        init();
+  </script>
+  <body>
+      <div id="content"></div>
+  </body>
+</html>
